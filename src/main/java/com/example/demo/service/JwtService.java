@@ -19,7 +19,7 @@ import java.util.Map;
 @Service
 public class JwtService {
 
-    @Value("${jwt.secret}")  // 비밀 키를 외부 설정에서 가져옴
+    @Value("${jwt.secret}")  // 비밀 키를 외부 설정에서 가져옴 ㅇㅇㅇ
     private String secretKey;
 
     public static final String CLAIM_NAME_MEMBER_ID = "MemberId";  // JWT 클레임 키
