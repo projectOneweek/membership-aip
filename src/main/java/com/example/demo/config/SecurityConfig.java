@@ -15,7 +15,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())  // CSRF 비활성화 (토큰 기반 인증 사용 시)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/users/signup", "/api/users/login").permitAll()  // 인증 없이 허용
+                        .requestMatchers("/api/signup", "/api/login").permitAll()  // 인증 없이 허용
                         .anyRequest().authenticated()  // 나머지 요청은 인증 필요
                 );
 
