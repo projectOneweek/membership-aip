@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api")
 public class UserController {
 
     private final UserService userService;
@@ -38,7 +38,7 @@ public class UserController {
     @PostMapping("/logout")
     public ResponseEntity<String> logout() {
         // 프론트엔드에서 JWT를 삭제하는 방식으로 처리합니다.
-        return ResponseEntity.ok("Logged out successfully!");
+        return ResponseEntity.ok("로그아웃 되었습니다.");
     }
 
     @GetMapping("/me")
